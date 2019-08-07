@@ -1,0 +1,40 @@
+\section{Density Surfaces}
+\label{section:lit_review_density_surfaces}
+
+In the analysis of water masses in the ocean there are two main surfaces which are used by oceanographers: potential density surfaces and neutral surfaces. In the following section we will introduce these as well as the possible advantages and disadvantages of their use. 
+
+Potential density surfaces are surfaces of constant potential density. The most common potential density surfaces used in oceanography are $\sigma_0$ (also known as $\sigma_\theta$), $\sigma_2$ and $\sigma_4$, using reference pressures at surface pressure, 2000dbar and 4000dbar respectively.
+
+Neutral surfaces were first introduced in the paper ``Neutral Surfaces" written by \citet{McDougall1987} and are also known as $\gamma_n$ surfaces. These are defined so that when parcels are moved, adiabatically and isentropically, small distances along the neutral surface they do not experience any buoyancy forces. Hence the energy cost on the neutral surface is designed to be zero and no work is needed to move along it \citep{McDougall1987}. 
+
+One of the advantages of using potential density surfaces is that potential density is easy to calculate. The values used in equation \ref{equation:lit_review_density_surfaces_sigma_calc} are in-situ salinity, $S$, potential temperature, $\theta$, and a reference pressure. The density, $\rho$, can be calculated using the non-linear equation of state for seawater. 
+
+\begin{equation}
+    \sigma_{p_{ref}} = \sigma(S,\theta,p_{ref}) = \rho(S,\theta, p_{ref}) - 1000kg/m^3
+    \label{equation:lit_review_density_surfaces_sigma_calc}
+\end{equation}
+
+In contrast, the calculations required for neutral surfaces are more complex \citep{STANLEY2019}. They are also mathematically ill-defined and so can only be approximated in the real ocean; if a neutral surface is traced around an ocean basin it has a helical path and does not end up at the point at which it began \citep{McDougall1987}, \citep{STANLEY2019}. One definition of the neutral surface is below in equation \ref{equation:lit_review_density_surfaces_gamma_calc} \citep{McDougall1987}:
+
+\begin{equation}
+    \alpha\nabla_n\theta = \beta\nabla_nS
+    \label{equation:lit_review_density_surfaces_gamma_calc}
+\end{equation}
+
+where
+
+\begin{equation}
+    \nabla_n = \frac{\partial}{\partial x}\Bigg\lvert_n \mathbf{i} + \frac{\partial}{\partial y}\Bigg\lvert_n \mathbf{j}
+\end{equation}
+
+In this case $\mathbf{i}$ and $\mathbf{j}$ are the unit vectors in the x and y directions. The calculation of $\gamma_n$ surfaces requires salinity, temperature, pressure, longitude and latitude \citep{JackettandMcDougall1997}. 
+
+Earlier it was mentioned that the neutral surface is constructed to have zero energy cost due to not experiencing any restoring buoyancy forces. However, movement along a neutral surface has been described in \citet{McDougall1987} as being made up of an adiabatic and isohaline  displacement away from the neutral surface and then feels a restoring buoyancy force to bring it back to its original neutral surface. The combined process averages to epineutral (along a tangent plane) dispersion but is made up of non-neutral stirring events \citep{Tailleux2016}, \citep{Nycander2011}. This would suggest that, even if the average energy for the combined epineutral process is zero, there may need to be an input of energy to begin the process and then at a subsequent step energy is released.
+
+In particular \citet{Nycander2011} shows that while there is no net change of the gravitational potential energy, $U$, there is a conversion between internal energy $E$ 
+to $U$ and then an equal conversion between $U$ and the kinetic energy $K$. This suggests that the internal energy and the kinetic energy both change and therefore that energy is required in order to displace a parcel along the neutral surface. 
+
+So far it has been assumed that the energy cost on the neutral surface is zero but there have been no studies that have calculated the energy cost \citet{Tailleux2016}. 
+
+Similarly, it has always been assumed that that the energy cost on potential density surfaces is positive. The reasoning for this is that the surface which best aligns with the ``preferred" mixing direction must have the lowest energy cost because it must be the ``easiest" path for the water mass to take and hence mix along. As such, if the neutral surface is best aligned with the ``true" mixing direction and its energy cost is zero, the energy cost on the potential density surface must be greater than zero \citep{McDougall1987}. Again, this has never been rigorously proven.  
+

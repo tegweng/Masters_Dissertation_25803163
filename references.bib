@@ -1,0 +1,357 @@
+%%
+% JOURNAL ABBREVIATIONS
+%
+@STRING{AMS 	= "Amer.\ Meteor.\ Soc."}
+@STRING{AGU 	= "Amer.\ Geophys.\ Union"}
+@STRING{AIP 	= "Amer. Inst. Phys."}
+@STRING{ADGEO     = "Adv.\ Geosci."}
+@STRING{AFM       = "Agric.\ For.\ Meteor."}
+@STRING{AM        = "Ann.\ Meteor."}
+@STRING{AN        = "Astrophys.\ Norv."}		% Astrophysica Norvegica
+@STRING{AO        = "Atmos.--Ocean"}			% Atmosphere--Ocean, published by Canadian Meteorological Society (CMOS)
+@STRING{AR        = "Atmos.\ Res."}			% Atmospheric Research
+@STRING{ARFM      = "Annu.\ Rev.\ Fluid Mech."}
+@STRING{AUMET     = "Aust.\ Meteor.\ Mag."}
+@STRING{BAMS      = "Bull.\ Amer.\ Meteor.\ Soc."}
+@STRING{CAP       = "Contrib.\ Atmos.\ Phys."}
+@STRING{CC        = "Climate Change"}      % Climate Change 
+@STRING{CCH       = "Climatic Change"}			% Climatic Change
+@STRING{CDYN      = "Climate Dyn."}
+@STRING{CHAOS     = "Chaos"}
+@STRING{COL       = "Collier's"}
+@STRING{CRS       = "Cont.\ Shelf Res."}
+@STRING{DAO       = "Dyn.\ Atmos.\ Oceans"}
+@STRING{ECO       = "Ecology"}
+@STRING{EI        = "Earth Interact."}
+@STRING{GA        = "Geophysica"}			% Geophysica, published by Geophysical Society of Finland 
+@STRING{GEOMAG    = "Geophys.\ Mag."}
+@STRING{GN        = "Geophys.\ Norv."}			% Geophysica Norvegica
+@STRING{GRL       = "Geophys.\ Res.\ Lett."}
+@STRING{GEOINT    = "Geofis.\ Int."}			% Geofisica Internacional (Mexican journal -- vols. 3--5 contained proceedings from a hurricane conference
+@STRING{GEOPUB    = "Geofys.\ Publ."}
+@STRING{GPC       = "Global Planet.\ Change"}
+@STRING{HP        = "Health Phys."}
+@STRING{IAOP      = "Izv.\ Atmos.\ Ocean.\ Phys.\ (Engl.\ Transl.)"}
+@STRING{IJC       = "Int.\ J.\ Climatol."}
+@STRING{JAM       = "J.\ Appl.\ Meteor."}		% renamed to name below in 2006
+@STRING{JAMC      = "J.\ Appl.\ Meteor.\ Climatol."}  	% Journal of Applied Meteorology and Climatology (this journal used to be called the Journal of Applied Meteorology before 2006)
+@STRING{JAS       = "J.\ Atmos.\ Sci."}
+@STRING{JAOT      = "J.\ Atmos.\ Oceanic Technol."}
+@STRING{JCAM      = "J.\ Climate Appl.\ Meteor."}	% from 1983--87, now JAMC
+@STRING{JCLI      = "J.\ Climate"}
+@STRING{JCR       = "J.\ Coastal Res."}
+@STRING{JFM       = "J.\ Fluid\ Mech."}
+@STRING{JEM       = "J.\ Eng.\ Math."}			% Journal of Engineering Mathematics
+@STRING{JGR       = "J.\ Geophys.\ Res."}
+@STRING{JHM       = "J.\ Hydrometeor."}
+@STRING{JMS       = "J.\ Mar.\ Syst."}
+@STRING{JM        = "J.\ Meteor."}
+@STRING{JMR       = "J.\ Mar.\ Res."}
+@STRING{JMSJ      = "J.\ Meteor.\ Soc.\ Japan"}
+@STRING{JPO       = "J.\ Phys.\ Oceanogr."}
+@STRING{JOCEAN    = "J.\ Oceanogr."}			% Journal of Oceanography
+@STRING{JOSJ      = "J.\ Oceanogr.\ Soc.\ Japan"}
+@STRING{JSE       = "J.\ Struct.\ Eng."}	% Journal of Structural Engineering at ASCE
+@STRING{JTM       = "J.\ Tropical Meteor."}
+@STRING{JWEIA     = "J.\ Wind Eng.\ Ind.\ Aerodyn."}
+@STRING{MA        = "Meteor.\ Appl."}
+@STRING{MAP       = "Meteor.\ Atmos.\ Phys."}
+@STRING{METMON    = "Meteor.\ Monogr."}
+@STRING{METZEIT   = "Meteor.\ Z."}
+@STRING{MWL       = "Mar.\ Wea.\ Log"}
+@STRING{MWR       = "Mon.\ Wea.\ Rev."}
+@STRING{NAT       = "Nature"}
+@STRING{NHR       = "Nat.\ Hazards Rev."}
+@STRING{NWD       = "Natl.\ Weather Dig."}
+@STRING{OA        = "Oceanol. Aeta"}
+@STRING{OCEAN     = "Oceanography"}                	% a quarterly journal of The Oceanography Society
+@STRING{PAG       = "Pure Appl.\ Geophys."}
+@STRING{PF        = "Phys.\ Fluids"}
+@STRING{PHYSD     = "Physica D"}
+@STRING{PMG       = "Pap.\ Meteor.\ Geophys."}	% Papers in Meteorology and Geophysics
+@STRING{PNAS      = "Proc.\ Natl.\ Acad.\ Sci.\ (USA)"}
+@STRING{PRE       = "Phys.\ Rev.\ E"}
+@STRING{PRSA      = "Proc.\ Roy.\ Soc."}
+@STRING{PT        = "Phys.\ Today"}
+@STRING{PTRS      = "Philos.\ Trans.\ Roy.\ Soc.\ London"}
+@STRING{QJRMS     = "Quart.\ J.\ Roy.\ Meteor.\ Soc."}
+@STRING{RGEO      = "Rev. Geophys."}
+@STRING{SCI       = "Science"}
+@STRING{SOLA      = "SOLA"}				% Scientific Online Letters on the Atmosphere
+@STRING{TAGU      = "Eos, Trans.\ Amer.\ Geophys.\ Union"}
+@STRING{TELLUS    = "Tellus"}
+@STRING{TCFD      = "Theor.\ Comput.\ Fluid Dyn."}
+@STRING{WEA       = "Weather"}
+@STRING{WW        = "Weatherwise"}
+@STRING{WF        = "Wea.\ Forecasting"}
+@STRING{WMOB      = "WMO Bull."}
+
+%Journal article database entry
+@ARTICLE{Taylor1979,
+    AUTHOR = {Karl E. Taylor},
+    YEAR = {1979},
+    TITLE = {Formulas for calculating available potential energy over uneven topography},
+    JOURNAL = {Tellus}, 
+    VOLUME = {31},
+    NUMBER = {3},
+    PAGES = {236-245}, 
+    DOI = {10.3402/tellusa.v31i3.10430},
+}
+
+@ARTICLE{Lorenz1955,
+    author = {Edward N. Lorenz},
+    YEAR = {1955},
+    title = {Available Potential Energy and the Maintenance of the General Circulation},
+    journal = {Tellus},
+    volume = {7},
+    number = {2},
+    pages = {157-167},
+    doi = {10.1111/j.2153-3490.1955.tb01148.x},
+}
+%Report database entry
+
+%Lecture notes
+@INBOOK{LectureNotes,
+    AUTHOR = {A. N. Charlton-Perez},
+    MONTH = {Jan},
+    YEAR = {2019},
+    TITLE = {Global Circulation lecture notes},
+    Chapter = {1. Averages and Conserved Quantities},
+    PUBLISHER = {University of Reading Meteorology Department},
+}
+@article{Dutton1967,
+author = {A. Dutton, John and R. Johnson, Donald},
+year = {1967},
+month = {12},
+pages = {333-436},
+title = {The Theory of Available Potential Energy and a Variational Approach to Atmospheric Energetics},
+volume = {12},
+journal = {Advances in Geophysics - ADVAN GEOPHYS},
+doi = {10.1016/S0065-2687(08)60379-9}
+}
+
+@article{Marquet1991,
+    author = {Marquet, Pascal},
+    YEAR = {1991},
+    title = {On the concept of exergy and available enthalpy: Application to atmospheric energetics},
+    journal = {Quarterly Journal of the Royal Meteorological Society},
+    volume = {117},
+    number = {499},
+    pages = {449-475},
+    doi = {10.1002/qj.49711749903},
+}
+@article{Wong2016,
+author = {Wong, K. C. and Tailleux, Rémi and Gray, Suzanne L.},
+year = {2016},
+title = {The computation of reference state and APE production by diabatic processes in an idealized tropical cyclone},
+journal = {Quarterly Journal of the Royal Meteorological Society},
+volume = {142},
+number = {700},
+pages = {2646-2657},
+doi = {10.1002/qj.2854},
+}
+
+@BOOK{Ambaum2010,
+
+    AUTHOR ={Maarten H. P. Ambaum},
+    YEAR = {2010},
+    TITLE = {Thermal Physics of the Atmosphere},
+    PUBLISHER ={Wiley-Blackwell},
+    DOI = {10.1002/9780470710364},
+    PAGES = {239},
+}
+
+
+%Website database entry
+@MISC{AnnualMeanPotentialTemp,
+	AUTHOR = {ECMWF},
+	YEAR = {cited 2019},
+	TITLE = {{Zonal mean potential temperature - tropospheric perspective}},
+	NOTE = {[Available online at \url{https://software.ecmwf.int/static/ERA-40_Atlas/docs/section_D25/parameter_zmpttp.html]}},
+	
+}
+
+%True bibliography
+
+@article{McDougall1987,
+author = {McDougall, Trevor J.},
+title = {Neutral Surfaces},
+journal = {Journal of Physical Oceanography},
+volume = {17},
+number = {11},
+pages = {1950-1964},
+year = {1987},
+doi = {10.1175/1520-0485(1987)017$<$1950:NS$>$2.0.CO;2},
+}
+
+@article{Tailleux2016,
+author = {Remi Tailleux},
+title = {Neutrality Versus Materiality: A Thermodynamic Theory of Neutral Surfaces},
+journal = {Fluids},
+volume = {1},
+number = {32},
+year = {2016},
+doi = {10.3390/fluids1040032},
+}
+
+@article{Hochet2019,
+          volume = {15},
+          author = {Antoine Hochet and Remi Tailleux and David Ferreira and Till Kuhlbrodt},
+           title = {Isoneutral control of effective diapycnal mixing in numerical ocean models with neutral rotated diffusion tensors},
+       publisher = {European Geosciences Union},
+         journal = {Ocean Science},
+             doi = {10.5194/os-15-21-2019},
+           pages = {21--23},
+            year = {2019},
+}
+
+@article{Redi1982,
+author = {Redi, Martha H.},
+title = {Oceanic Isopycnal Mixing by Coordinate Rotation},
+journal = {Journal of Physical Oceanography},
+volume = {12},
+number = {10},
+pages = {1154-1158},
+year = {1982},
+doi = {10.1175/1520-0485(1982)012$<$1154:OIMBCR$>$2.0.CO;2},
+}
+
+@incollection{Veronis1975,
+author = {G. Veronis},
+year = {1975},
+pages = {133-146},
+title = {The role of models in tracer studies},
+booktitle = {{Numerical--Models--of--Ocean--circulation}},
+publisher = {National Academy of Science},
+location = {Washington},
+}
+
+@article{Gough1995,
+author = {Gough, William and A. Lin, Charles},
+year = {1995},
+month = {03},
+pages = {189-199},
+title = {Isopycnal mixing and the Veronis effect in an ocean general circulation model},
+volume = {53},
+journal = {Journal of Marine Research},
+doi = {10.1357/0022240953213223}
+}
+
+@book{WOCEAtlanticAtlas,
+author = {K. P. Koltermann and V.V. Gouretski and K. Jancke},
+year = {2011},
+title = {Hydrographic Atlas of the World Ocean Circulation Experiment (WOCE)},
+volume = {3: Atlantic Ocean (eds. M Sparrow, P.Chapman and J. Gould)},
+publisher = {International WOCE Project Office},
+address = {Southampton, UK},
+DOI =  {10.21976/C6RP4Z},
+}
+
+@article{Pradal2104,
+author = {Marie-Aude Pradal and Anand Gnanadesikan},
+year = {2014},
+title = {How does the Redi parameter for mesoscale mixing impact
+global climate in an Earth System Model?},
+journal = {Journal of Advances in Modeling Earth Systems},
+volume = {6},
+pages = {586–601},
+doi = {10.1002/2013MS000273},
+}
+
+@article{JackettandMcDougall1997,
+author = {Jackett, David R. and McDougall, Trevor J.},
+title = {A Neutral Density Variable for the World’s Oceans},
+journal = {Journal of Physical Oceanography},
+volume = {27},
+number = {2},
+pages = {237-263},
+year = {1997},
+doi = {10.1175/1520-0485(1997)027$<$0237:ANDVFT$>$2.0.CO;2},
+} 
+
+@article{McDougall2014,
+author = {McDougall, Trevor J. and Groeskamp, Sjoerd and Griffies, Stephen M.},
+title = {On Geometrical Aspects of Interior Ocean Mixing},
+journal = {Journal of Physical Oceanography},
+volume = {44},
+number = {8},
+pages = {2164-2175},
+year = {2014},
+doi = {10.1175/JPO-D-13-0270.1},
+}
+
+@article{STANLEY2019,
+title = {Neutral surface topology},
+journal = {Ocean Modelling},
+volume = {138},
+pages = {88-106},
+year = {2019},
+issn = {1463-5003},
+doi = {10.1016/j.ocemod.2019.01.008},
+author = {Geoffrey J. Stanley},
+}
+
+@book{Levitus1982,
+author = {Levitus, S. E.},
+title = {Climatological atlas of the world ocean}, 
+Publisher = {NOAA Professional Paper 13}, 
+address = {US Government Printing Office, Washington DC},
+year = {1982},
+}
+
+@book{WOCE2002,
+author = {WOCE},
+year = {2002}, 
+title = {WOCE Global Data, Version 3.0},
+Publisher = {WOCE data products committee, WOCE International Project Office, WOCE Report No. 180/02}, 
+address = {Southampton, UK},
+}
+
+@ARTICLE{Haversine1984,
+   author = {Sinnott, R. W.},
+    title = {Virtues of the Haversine},
+  journal = {Sky and Telescope},
+     year = {1984},
+    month = {dec},
+   volume = {68},
+    pages = {158},
+}
+
+@book{Sverdrup1942,
+title = {The Oceans, Their Physics, Chemistry, and General Biology },
+author = {H. U. Sverdrup, M. W. Johnson, R. H. Fleming},
+year = {1942},
+Publisher = {Prentice-Hall},
+address = {New York},
+pages = {60-65},
+}
+
+@article{YOU2002,
+title = "A global ocean climatological atlas of the Turner angle: implications for double-diffusion and water-mass structure",
+journal = "Deep Sea Research Part I: Oceanographic Research Papers",
+volume = "49",
+number = "11",
+pages = "2075 - 2093",
+year = "2002",
+doi = "https://doi.org/10.1016/S0967-0637(02)00099-7",
+author = "Yuzhu You",
+}
+
+@article{Nycander2011,
+author = {Nycander, J},
+year = {2011},
+pages = {28-41},
+title = {Energy Conversion, Mixing Energy, and Neutral Surfaces with a Nonlinear Equation of State},
+volume = {41},
+journal = {Journal of Physical Oceanography - J PHYS OCEANOGR},
+doi = {10.1175/2010JPO4250.1}
+}
+
+@book{Vallis2017, 
+place={Cambridge}, 
+edition={2}, 
+title={Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Large-Scale Circulation}, 
+DOI={10.1017/9781107588417}, 
+publisher={Cambridge University Press}, 
+author={Vallis, Geoffrey K.}, year={2017},
+}

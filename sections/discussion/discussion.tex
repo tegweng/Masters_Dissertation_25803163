@@ -1,0 +1,73 @@
+\label{chapter:Discussion}
+\section{Summary and Conclusions}
+
+In this work we have investigated the relationship between $R_\rho$, $c$ and the gradient ratios of the material variables $S$ and $\theta$. This has allowed us to classify regimes based on the values of $R_\rho$ and $c$ which we can use to predict the spread of variables on the neutral surface and potential density surfaces:
+
+\begin{enumerate}
+    \item Both $\theta$ and $S$ gradients smallest on neutral surface
+    \item $\theta$ or $S$ gradients smaller on the neutral surface but not both
+    \item Both $\theta$ and $S$ gradients smallest on potential density surface
+\end{enumerate}
+
+These regimes did not neatly align with the classification of domains of $R_\rho$, i.e. ``double diffusive", ``doubly stable" and ``salt-fingering". That, and the high spatial variability of $R_\rho$, means that classifying regions of the ocean into one of these three new regimes is not straightforward.
+
+However, we were able to show that there is a very strong link between the mathematical expression for the spread of a variable and the physical gradient. The results predicted in section \ref{subsection:gradienttresults} for the physical ``spread" of $\theta$ and $S$ on the surfaces of interest, given in section \ref{subsection:spreadresults}, were very clear. 
+
+Through analysis of the gradient ratios and the plots of the physical spread of the variables on the $\gamma_n$ and $\sigma$ surfaces, it was proved that in the Atlantic region originally described by \citet{McDougall1987} the $\sigma_4$ surfaces minimises the gradient of $\theta$ and $S$. By this criteria, it is the surface which would minimise fictitious mixing and aligns best with the ``true" mixing direction. This shows that the neutral surface may not always be the most appropriate surface to use when representing mixing.
+
+Finally, the energy cost was calculated on the $\gamma_n$ and $\sigma_4$ surfaces in order to try and understand the relationship between minimised spread and energy cost. While it seemed like it was possible to have zero or negative energy cost on potential density surfaces, and that the neutral surface might not only have zero energy cost, the limitations of the dataset mean that more work would be necessary to confirm this result. 
+
+\section{Future Work}
+
+\subsection{Mathematical Gradient and Physical Spread}
+
+It would be interesting to calculate the Turner angle and plot the gradient ratios of $\theta$ and $S$ in terms of $Tu$  as $R_\rho$ has discontinuites at $\pm\infty$ and some ambiguity when considering ``doubly diffusive" and ``doubly unstable" regimes: these both have a negative density ratio though the latter is not common \citep{YOU2002}.   
+
+In addition, using the physical ocean data from \citet{WOCE2002} to identify other areas where we are in regimes 2 or 3, as outlined in section \ref{subsubsection:gradientresultsR_Rhoandc}, would be useful in order to test the theory more robustly. While the two examples do follow the expected pattern, more data would compound the theory. It would also help to quantify how common these regimes are in the ocean and how important it is to consider alternatives to the neutral surface. 
+
+Then computing the spread of $\theta$ and $S$ in these locations and linking back to the gradient ratios would give more certainty in the results.
+
+\subsection{Energetics}
+
+The questions outlined in section \ref{subsection:energeticstheory} are still outstanding. These were:
+
+\begin{enumerate}
+    \item Is $\Delta E>0$ on potential density surfaces?
+    \item Is $\Delta E = 0$ on the neutral surface?
+    \item Is $\Delta E$ minimised on the surface that minimises the gradient of $\theta$ and $S$?
+    \item Can $\Delta E$ be negative?
+\end{enumerate}
+
+As mentioned in section \ref{subsection:energeticsresults} is possible that the values of $p$ in the \citet{WOCE2002} data set are not accurate enough in order to be able to calculate the energy cost correctly. Repeating the calculation of the energy cost using values of $p$ found by integrating the density, $\rho$, (using the hydrostatic relation) with respect to depth could give a clearer idea of the true energy cost. 
+
+While two parcel energetics are a better representation of ocean dynamics, they still do not give the whole picture. Finding a way to calculate the energy cost on the surfaces of interesting using the full set of equations might be necessary to fully understanding the behaviour on the surfaces of interest. 
+
+\subsection{Modelling}
+
+In general ocean models want to minimise ``spurious" mixing and the ``Veronis effect" and do so by using an isopycnal mixing parameterisation \citep{Gough1995}. Currently this is based on the Redi diffusion tensor with the neutral surface as the isopycnal direction \citet{McDougall1987}, \citet{McDougall2014}. While it is theorised that instead using a density surface which minimises the ``spread" or gradient of variables on its surface will also minimise the mixing in models, it would be clearer if calculations were done in order to prove that is the case. 
+
+For example, let us consider the dissipation of temperature variance, $X_T$, in an isopycnal coordinate system. As the temperature varies much more than salinity in the ocean it is possible that we may be able to observe this directly. We have the following equation (citation?): 
+
+\begin{equation}
+    X_T = K_i|\Delta_i\theta|^2 + K_d|\Delta_d\theta|^2
+\end{equation}
+
+where $K_i$ is the isopycnal diffusivity, $K_d$ is the diapycnal diffusivity, $\Delta_i$ the gradient in the isopycnal direction and $\Delta_d$ the gradient in the diapycnal direction. 
+
+By calculating $X_T$ for different surfaces (different isopycnal directions) we can find the surface that minimises the dissipation of temperature variance. This corresponds to minimised diffusion and hence minimised mixing on the surface. Hence this surface should be best at ``getting rid" of any fictitious mixing.
+
+However, is not clear that we should be aiming simply to minimise mixing in the ocean. Comparing the various diffusivities across several isopycnal directions with real observations of diffusion of temperature in the ocean would help to understand whether this is the right approach. 
+
+\subsection{Alternative theories}
+
+The regimes outlined in this paper do not provide a framework for classifying the oceans. There is no understanding of why $\sigma_4$ should minimise the gradient of $S$ and $\theta$ in the Atlantic region other than based on mathematical formulas. There is no link to the physical processes at work. 
+
+As discussed in section \ref{section:lit_review_alternative_theories} there are several alternative theories which could provide a more rigorous and complete picture of the ocean dynamics. One of the important next steps would be to attempt to test those theories in a similar manner to what has been achieved in this work in order to see whether the theory holds true in the real ocean. 
+
+For example, \citet{Tailleux2016} suggests that criteria for the degree of neutrality of a material surface $\gamma(S,\theta) = const$ is related to the Jacobian term 
+
+\begin{equation}
+    |J_n| = \bigg|\frac{\delta(v,\gamma)}{\delta(S,\theta)}\bigg|
+\end{equation}
+
+It would be interesting to calculate this Jacobian term for the surfaces outlined in this work to understand if there is a link between the surface that minimises the gradient ratios of $\theta$ and $S$ and that which minimises $J_n$.

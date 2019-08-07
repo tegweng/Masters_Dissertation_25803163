@@ -1,0 +1,48 @@
+\subsection{Gradient Ratio Method}
+\label{subsection:gradientmethod}
+
+\subsubsection{Gradient Regimes}
+
+Firstly the gradient ratios of $\theta$ and $S$ were calculated for a range of $R_\rho$ values for two specific values of $c$: $c = 1.2$ as in \citet{McDougall1987}; and $c = 0.1$ in order to understand the behaviour when $0<c<1$. The results were plotted between $R_\rho = \pm 13$ as this is large enough to see the behaviour as $R_\rho \to \pm \infty$ but small enough to still be able to see the behaviour in the key region $0<R_\rho<1$.
+
+Then in order to have a more complete picture a plot of the gradient ratios while varying both $R_\rho$ and $c$ was produced. 
+
+Next the gradient ratios were used to group the results into 3 regimes, corresponding to those outlined in section \ref{subsection:gradienttheorymathematicaltheory}, using the following criteria: 
+
+\begin{enumerate}
+    \item Both $\theta$ and $S$ gradients smallest on neutral surface
+        \begin{itemize}
+            \item Gradient ratios of $\theta$ and $S$ less than 0 or larger than 1
+        \end{itemize}
+    \item $\theta$ or $S$ gradients smaller on the neutral surface but not both
+         \begin{itemize}
+            \item Gradient ratio of $\theta$ between 0 and 1 \textbf{and} gradient ratio of $S$ less than 0 or larger than 1
+            \item Gradient ratio of $S$ between 0 and 1 \textbf{and} gradient ratio of $\theta$ less than 0 or larger than 1
+        \end{itemize}
+    \item Both $\theta$ and $S$ gradients smallest on potential density surface
+         \begin{itemize}
+            \item Gradient ratios of $\theta$ and $S$ between 0 and 1
+        \end{itemize}
+\end{enumerate}
+
+These regimes were then plotted against $R_\rho$ and $c$. 
+
+\subsubsection{Calculations Using Real Ocean Data}
+
+The dataset used in this work is the \citet{WOCE2002} dataset. Even though it does still have areas where data is sparse, for example the Southern Ocean (citation?), this was chosen as it is more recent and comprehensive than the \citet{Levitus1982} dataset which was used in \citet{McDougall1987}.
+
+The values of interest, $R_\rho$, $c$ and the gradient ratios for $\theta$ and $S$, were calculated for the whole ocean using three reference pressures: surface pressure or 0dbar, 2000dbar and 4000dbar. This aligns with the three principle potential density surfaces that we wished to compare to the neutral surface: $\sigma_0$, $\sigma_2$ and $\sigma_4$. 
+
+In these calculations the values of $\theta_z$ and $S_z$ were found using a simple linear formula as seen in equation \ref{equation:calculating_r_rho}. The data points were taken as either side of the depth at which $R_\rho$ was being calculated. 
+
+\begin{equation}
+    \frac{\theta_z}{S_z} = \frac{\theta_2 - \theta_1}{z_2-z_1} \times \frac{z_2 - z_1}{S_2 - S_1} = \frac{\theta_2 - \theta_1}{S_2 - S_1}
+    \label{equation:calculating_r_rho}
+\end{equation}
+
+Where $S_z$ = 0, i.e. there is no vertical gradient of salinity, $R_\rho$ is not defined. As $S_z$ tends to zero $R_\rho$ tends to infinity. Hence at these points the gradient ratio of $\theta$ was set to the value of c and the gradient ratio of $S$ was set to 1. $R_\rho$ was left as not defined (NaN) at these points. 
+
+In order to understand the values on potential density surfaces and neutral surfaces in the Atlantic region the data was then projected onto the surface of interest using linear interpolation. The selection and derivation of the density surfaces used is outlined in section \ref{subsection:spreadmethod}, as is why linear interpolation was chosen. 
+
+
+

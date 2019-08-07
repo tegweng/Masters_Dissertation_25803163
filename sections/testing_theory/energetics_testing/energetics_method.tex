@@ -1,0 +1,45 @@
+\subsection{Energetics Method}
+\label{subsection:energeticsmethod}
+
+In order to calculate the energy cost using the equation \ref{equation:energy_theory_energy_calc} from the previous section, the enthalpy must be calculated. Using the TOES-10 to calculate the Gibbs function, $g$, the specific enthalpy can be found as
+
+\begin{equation}
+    h(S,t,p) = g(S,t,p) - Tg_T(S,t,p)
+\end{equation}
+
+where $S$ is the absolute salinity, $p$ is the pressure, $t$ is the in-situ temperature in $^{\circ}$C and $T = T_0 + t$ in $^{\circ}$K where $T_0 = 273.15$. The partial differential with respect to T is represented as $g_T$. The variables $S$, $t$ and $p$ are provided in the \citet{WOCE2002} dataset. 
+
+However, the equation for the energy change requires $\theta$, not $t$. In this case equation \ref{equation:energy_theory_energy_calc} becomes
+
+\begin{equation}
+    \Delta E = h(S_1, t'_1, p_2) - h(S_1, t_1, p_1) +h(S_2, t_2, p_1) - h(S_2, t'_2, p_2)
+    \label{equation:energy_method_energy_calc}
+\end{equation}
+
+where $t'_1$ and $t'_2$ are calculated by evaluating the entropy at the two points $p_1$ and $p_2$. We must calculate these values because $\theta$ is conserved in an adiabatic displacement but $t$ is not. As entropy is conserved for isobaric movement it must be true that
+
+\begin{equation}
+    \mathbf{S}(S_2, t_2, p_2) = \mathbf{S}(S_2, t'_2, p_1)
+\end{equation}
+
+and so $t'_2$ can be found. The same process is used to calculate $t'_1$ using $t_1$. 
+
+In order to calculate the energy cost on particular surfaces, for example the neutral surface, it was decided to fix $p_1$ at a starting location then to methodically calculate $\Delta E$ for each of the other points in the ocean basin. 
+
+For the Atlantic ocean, in line with the calculations performed in \citet{McDougall1987}, the starting position was chosen as $47^{\circ}$W and $5^{\circ}$N. For surfaces starting in the Gibraltar Straight region the starting position was chosen as $8^{\circ}$W and $36^{\circ}$N. Then $S_1$, $t_1$ and $p_1$ were taken as the values of $S$, $t$ and $p$ on the surface of interest at that location. The selection and derivation of the density surfaces used is outlined in section \ref{subsection:spreadmethod}. 
+
+These energy values were then normalised by dividing by the square of the distance, $d$, between the two longitude-latitude points, $(\gamma_1, \phi_1)$ and $(\gamma_2, \phi_2)$. The normalised energy cost is then given by $\frac{\Delta E}{d^2}$.
+
+As the distance across the globe is not a straight line but an arc on a sphere the Haversine formula was used to calculate $d$ \citep{Haversine1984}:
+
+\begin{align}
+    \Delta\phi &= \phi_2 - \phi_1 \\
+    \Delta\gamma &= \gamma_2 - \gamma_1 \\
+    a &= \sin^2\bigg(\frac{\Delta\phi}{2}\bigg) + \cos(\phi_1)\times\cos(\phi_2)\times\sin^2\bigg(\frac{\Delta\gamma}{2}\bigg) \\
+    c &= 2 \times\arctan2(\sqrt{a}, \sqrt{1-a}) \\
+    d &= R\times c
+\end{align}
+
+where $R$ is the radius of the Earth, taken as $R = 6371.0 \times 10^3$m, and $d$ is the distance between the two longitude, latitude points in metres. In this formula $\phi$ refers to latitude and $\gamma$ to longitude and $\arctan2(y,x)$ is the arctangent used in programming languages to mean $\arctan(y/x)$.
+
+ Finally, the normalised energy cost was plotted in the Atlantic region in order to understand any geographic patterns in the data. 

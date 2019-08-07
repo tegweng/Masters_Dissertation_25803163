@@ -1,0 +1,63 @@
+\documentclass[12pt,twoside]{report}
+
+
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{natbib}
+\usepackage{import}
+%\usepackage{epstopdf}
+\usepackage{graphicx, caption, subcaption}
+\usepackage{amsmath,amsfonts,amssymb,bm, titletoc}
+\bibpunct{(}{)}{;}{a}{}{,}
+\graphicspath{{./plots/}}
+\renewcommand{\baselinestretch}{1.5}
+
+%alternative structure - based on results so not method+ results separately but have sections for each part of the dissertation work
+
+%e.g. "observational testing of neutral density theory" and another section "development and testing of alternative theory"
+\pagenumbering{roman}
+\begin{document}
+
+\import{sections/}{title}
+
+
+\chapter{Introduction}
+\pagenumbering{arabic}
+\import{sections/introduction/}{introduction}
+
+\chapter{Background}
+\import{sections/literature_review/}{mixing}
+\import{sections/literature_review/}{Potential_density_surfaces}
+\import{sections/literature_review/}{Applications}
+\import{sections/literature_review/}{proposed_alternatives}
+
+
+\chapter{Observational Testing of Neutral Density Theory}
+
+\import{sections/testing_theory/gradient_testing/}{gradient_theory}
+\import{sections/testing_theory/gradient_testing/}{gradient_method}
+\import{sections/testing_theory/gradient_testing/}{gradient_results}
+
+\import{sections/testing_theory/spread_testing/}{spread_theory}
+\import{sections/testing_theory/spread_testing/}{spread_method}
+\import{sections/testing_theory/spread_testing/}{spread_results}
+
+\import{sections/testing_theory/energetics_testing/}{energetics_theory}
+\import{sections/testing_theory/energetics_testing/}{energetics_method}
+\import{sections/testing_theory/energetics_testing/}{energetics_results}
+
+\chapter{Discussion and Further Work}
+\import{sections/discussion/}{discussion}
+
+\appendix
+\chapter{Figures from McDougall (1987)}
+\import{sections/appendices/}{appendix_a_McDougall}
+\chapter{Calculation of $\frac{\alpha}{\beta}$}
+\import{sections/appendices/}{appendix_b_alphabeta}
+\chapter{Additional Figures}
+\import{sections/appendices/}{appendix_c_additional_figures}
+
+\import{sections/}{bibliography}
+
+\end{document}

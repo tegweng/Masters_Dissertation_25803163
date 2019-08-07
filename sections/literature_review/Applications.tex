@@ -1,0 +1,13 @@
+\section{Applications}
+\label{section:lit_review_applications}
+While the understanding of mixing directions is an interesting theoretical problem in and of itself, there are also practical applications that can be considered. One of the most important is the implications for mixing and diffusion in ocean modelling. 
+
+Currently potential temperature, $\theta$, and salinity, $S$, in coarse-resolution ocean models are mixed at sub-grid scale using a rotated diffusion tensor designed by Redi \citep{Hochet2019}, \citep{Redi1982}. This is most often aligned with the neutral surface as it is claimed to minimise the ``Veronis effect" as it is best aligned with the ``true" mixing direction \citep{McDougall1987}, \citep{McDougall2014}.  
+
+The ``Veronis effect" refers to spurious diapycnal mixing which is an artefact of the model rather any physical process \citet{Tailleux2016}. It was originally identified by Veronis when anomalous downwelling was observed in a model \citet{Veronis1975}. This was due to using a vertical/horizontal parameterisation of the sub-scaling mixing. In areas of steep isopycnal sloping, such as along the western boundary of the Atlantic ocean, a horizontal mixing direction causes large amounts of unphysical diapycnal flux of $\theta$ and $S$. To balance this flux upwelling of cold water is required which leads, via mass continuity, to the anomalous downwelling seen in the numerical simulation \citep{Gough1995}, \citep{Veronis1975}. 
+
+Using an isopycnal alignment of the parameterisation of mixing does reduce the ``Veronis effect" as seen in \citet{Gough1995}.  
+
+Intuitively we can see a relationship between the strength of sub-grid scale mixing and heat transport in the ocean. This extends to ocean heat up-take and thus can affect global temperature values. There are studies which support this, such as \citet{Pradal2104}, which showed that increasing isopycnal stirring in climate simulation models warms the planet. Therefore it is important to parameterise sub-grid scale mixing in the most realistic way in order for future climate projections to be accurate. 
+
+This work aims to investigate the alignment of neutral surfaces and potential density surfaces with the ``true'' mixing direction in order to understand which gives a better fit and under which conditions we might look to use one or the other. Using this knowledge in models could help to minimise the ``Veronis" effect and, as a consequence, produce more accurate climate projections.

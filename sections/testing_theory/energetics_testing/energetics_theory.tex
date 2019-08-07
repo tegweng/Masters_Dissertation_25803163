@@ -1,0 +1,34 @@
+\section{Energetics}
+\label{section:energetics}
+
+\subsection{Energetics Theory}
+\label{subsection:energeticstheory}
+
+The original arguments given in \citet{McDougall1987} were based on single parcel theory. However, \citet{Tailleux2016} claims that mixing in the ocean is better understood using two parcel theory, in which mixing is conceptualised as two parcels switching positions. This is based on permutation theory, in which mixing is seen as a set of permutations and all possible permutations can be described as a set of pair-wise permutations i.e. two parcels exchanging places (citation?).  
+
+Each parcel has different thermodynamic properties, $\theta$ and $S$, and their starting positions are taken as two different pressures, $p$. It is assumed that the parcels lie on the same material surface $\gamma$ = constant; this could be a potential density surface or a neutral surface \citep{Tailleux2016}.
+
+In this work the displacements are assumed to be hydrostatic, adiabatic and isohaline. As the data points are at half a degree of longitude or latitude, approximately 5500km, it is reasonable to use the hydrostatic assumption. 
+
+In this case the change in energy, which reduces to changes in available potential energy (APE), can be found by considering enthalpy changes as seen in equation \ref{equation:energy_theory_energy_calc} \citep{Tailleux2016}:
+
+
+\begin{equation}
+    \Delta E = h(S_1, \theta_1, p_2) - h(S_1, \theta_1, p_1) +h(S_2, \theta_2, p_1) - h(S_2, \theta_2, p_2)
+    \label{equation:energy_theory_energy_calc}
+\end{equation}
+
+where $h(S, \theta, p)$ is the specific enthalpy, $p$ is pressure and, as before, $S$ and $\theta$ are the salinity and potential temperature respectively.
+
+Lateral dispersion can occur when the energy $\Delta E\leq 0$  \citep{Tailleux2016}. The neutral surface is supposed to, by construction, have zero energy cost \citet{McDougall1987}. There are several papers which dispute whether this is really the case, including \citet{Tailleux2016} and \citet{Nycander2011}. This has been discussed in more detail in section \ref{section:lit_review_density_surfaces}.
+
+Potential density surfaces are assumed to have a positive energy cost \citep{McDougall1987}. Hence it should not be possible to have lateral dispersion on a potential density surface. However, as we have seen from sections \ref{section:gradienttheorymathematical} and \ref{section:spread} it appears that, if mixing is defined as occuring in the direction of smallest $\theta$ and $S$ gradients, mixing should occur on the $\sigma_4$ surface. This poses the following questions:
+
+\begin{enumerate}
+    \item Is $\Delta E>0$ on potential density surfaces?
+    \item Is $\Delta E = 0$ on the neutral surface?
+    \item Is $\Delta E$ minimised on the surface that minimises the gradient of $\theta$ and $S$?
+    \item Can $\Delta E$ be negative?
+\end{enumerate}
+
+We will attempt to answer these questions in the following section. 
