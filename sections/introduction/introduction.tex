@@ -2,9 +2,13 @@
 
 \section{Motivation}
 
-Currently in oceanography the neutral surface is widely used as a basis for understanding mixing directions \citep{Tailleux2016}, \citep{McDougall1987}. In addition, in order to represent mixing in the ocean many models use a diffusion tensor based on the neutral direction \citep{McDougall2014}. This is based on arguments presented in \citet{McDougall1987} and \cite{JackettandMcDougall1997}, then extended in \citet{McDougall2014}. 
+Currently in oceanography the neutral surface is widely used as a basis for understanding mixing directions in the ocean interior \citep{Tailleux2016}, \citep{McDougall1987}. In addition, in order to parameterise mixing in the ocean many models use a diffusion tensor based on the neutral direction \citep{McDougall2014}. This is based on arguments presented in \citet{McDougall1987} and \cite{JackettandMcDougall1997}, then extended in \citet{McDougall2014}. 
 
+Mixing in the ocean not only homogenises the values of potential temperature, $\theta$, and $S$, but also serves to transport heat, salinity and nutrients in the ocean interior \citep{Vallis2017}, \cite{OC4}. The ocean is a large heat reservoir and therefore representing the heat budget and transport correctly in models is an important challenge if we are to produce accurate climate simulations \citep{OC1}, \citep{OC4}, \citep{Hochet2019}. The amount and type of mixing (isopycnal or diapycnal) in a model can affect how much heat the ocean can take up as well as patterns of upwelling and downwelling \citep{Veronis1975}, \citep{Gough1995}. As such, making sure that the isopycnal direction used in the parameterisation of mixing is best aligned to the ``true" mixing direction in the ocean is important. 
 
+Currently the criteria for surface which best aligns with the preferred mixing direction is that which minimises the gradient of material variables $S$ and $\theta$ and this is assumed to be the neutral surface \citep{McDougall1987}. This project is motivated by understanding whether this is the case under all circumstances and whether it is possible to find a surface which is ``better" aligned with the true mixing direction. 
+
+This project sits inside a wider set of questions in this field including whether the surface that minimises the gradient variables is the best selection criteria for the mixing surface and if we need new surfaces to describe the mixing direction fully \citep{Hochet2019}, \citep{Nycander2011}, \citep{STANLEY2019}.
 
 \section{Aims}
 \label{section:intro_aims}
@@ -23,6 +27,10 @@ The aims of this project are to test elements of neutral surface theory using mo
 
 \section{Outline of Dissertation}
 
-In the first section of this dissertation we look into the background of the subject. This includes the definition of water masses and how it is currently understood interior mixing happens in the ocean. Then we introduce potential density and neutral surfaces as well as discussing the advantages and disadvantages of their use. 
+In the first section of this dissertation we look into the background of the subject. This includes the definition of water masses and how it is currently understood interior mixing happens in the ocean. Then we introduce potential density and neutral surfaces as well as discussing the advantages and disadvantages of their use. The applications of this work in the field of modelling will be explored before finally 
 
-In the next section 
+In the next section we will test the neutral density surface using observations from the \citet{WOCE2002} dataset in three main ways: calculating the ratios of the gradients of theta, $\theta$, and salinity, $S$, on surfaces on interest; plotting the physical spread of $\theta$ and $S$ on surfaces of interest in order to compare to figures in \citet{McDougall1987} and predictions from the gradient ratios calculated earlier; and finally by computing the energy cost associated with a two-parcel exchange on the surfaces of interest. Each of these sections will compose of the theoretical background, methodology and results from these experiments.
+
+Finally, the results from the observational testing section are discussed within the wider context of the field. In addition, areas in which further work would be necessary or useful are identified, such as extending the testing of these surfaces to the amount of diffusion they would produce in models. 
+
+There are also three appendices which provide additional figures from the \citet{McDougall1987} paper, additional calculations, and additional figures produced from this project which are included for completeness. 
